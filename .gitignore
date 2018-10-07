@@ -13,6 +13,8 @@ selenium-debug.log
 # Backend
 __pycache__
 backend/venv
+.venv
+flask.db
 
 
 # Editor directories and files

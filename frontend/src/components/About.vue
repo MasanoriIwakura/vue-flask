@@ -8,28 +8,29 @@
 </template>
 
 <script>
-import axios from 'axios'
+import axios from "axios";
 
 export default {
-    data () {
-        return {
-            msg: ''
-        }
-    },
-    created () {
-        this.getMessage()
-    },
-    methods: {
-        getMessage () {
-            const path = `http://localhost:5000/api/about`
-            axios.get(path)
-            .then(response => {
-                this.msg = response.data.message
-            })
-            .catch(eror => {
-                this.msg = 'Error.'
-            })
-        }
+  data() {
+    return {
+      msg: ""
+    };
+  },
+  created() {
+    this.getMessage();
+  },
+  methods: {
+    getMessage() {
+      const path = `http://localhost:5000/api/about`;
+      axios
+        .get(path)
+        .then(response => {
+          this.msg = response.data.message;
+        })
+        .catch(error => {
+          this.msg = "Error.";
+        });
     }
-}
+  }
+};
 </script>

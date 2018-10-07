@@ -5,8 +5,12 @@ name = "pypi"
 
 [packages]
 flask = "*"
+pip = "==18.0"
+sqlalchemy = "*"
 
 [dev-packages]
+pylint = "*"
+"autopep8" = "*"
 
 [requires]
 python_version = "3.7"

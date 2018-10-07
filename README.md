@@ -23,9 +23,12 @@ npm install
 npm run build
 
 # Backend Command
+export PIPENV_VENV_IN_PROJECT=true
 cd backend
 pipenv install
-pipenv run flask run
+pipenv run python do_create.py
+cd ../
+pipenv run python app.py
 ```
 
 Access to http://localhost:5000
