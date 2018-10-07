@@ -36,6 +36,12 @@ Access to http://localhost:5000
 ## Docker
 
 ```bash
+# Frontend build
+cd frontend
+npm i
+npm run build
+cd ../
+
 # Docker build
 docker build -t vue-flask .
 
