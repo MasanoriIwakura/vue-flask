@@ -32,7 +32,7 @@ export default {
   },
   methods: {
     getTodos() {
-      const path = `http://localhost:5000/api/todos`;
+      const path = `/api/todos`;
       axios
         .get(path)
         .then(response => {
@@ -43,7 +43,7 @@ export default {
         });
     },
     addTodo() {
-      const path = `http://localhost:5000/api/todos`;
+      const path = `/api/todos`;
 
       if (this.addBody == "") {
         this.errMsg = "TODOを入力してください";
@@ -59,7 +59,7 @@ export default {
         });
     },
     deleteTodo(id) {
-      const path = `http://localhost:5000/api/todo/`;
+      const path = `/api/todo/`;
       const params = new URLSearchParams();
 
       axios

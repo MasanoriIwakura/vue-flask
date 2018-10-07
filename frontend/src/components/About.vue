@@ -21,7 +21,7 @@ export default {
   },
   methods: {
     getMessage() {
-      const path = `http://localhost:5000/api/about`;
+      const path = `/api/about`;
       axios
         .get(path)
         .then(response => {

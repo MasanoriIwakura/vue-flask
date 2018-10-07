@@ -32,3 +32,17 @@ pipenv run python app.py
 ```
 
 Access to http://localhost:5000
+
+## Docker
+
+```bash
+# Docker build
+docker build -t vue-flask .
+
+# Docker run
+docker run -d -p 80:5000 vue-flask
+```
+
+Access to http://localhost  
+or  
+Access to http://localhost/api/about
